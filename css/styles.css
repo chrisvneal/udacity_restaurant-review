@@ -322,15 +322,13 @@ nav h1 a {
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
+  /* padding: 140px 40px 30px; */
+  padding-left: 20px;
   width: 50%;
 }
 
 /* restaurant reviews styles */
 
-#reviews-container {
-  padding: 30px 40px 80px;
-}
 
 #reviews-container h2 {
   color: #f58500;
@@ -380,5 +378,8 @@ nav h1 a {
 }
 
 @media screen and (min-width: 721px) {
-
+  .inside #map-container {
+    width: 50%;
+    top: 131px;
+  }
 }
