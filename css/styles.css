@@ -366,11 +366,19 @@ nav h1 a {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   .inside #map-container {
     position: relative;
     top: 131px;
     height: 400px;
     width: 100%;
   }
+
+  .leaflet-top.leaflet-left {
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 721px) {
+
 }
