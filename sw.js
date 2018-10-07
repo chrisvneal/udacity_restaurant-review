@@ -1,3 +1,4 @@
+const cacheName = "cache version 1";
 const cachedFiles = [
   '/',
   '/index.html',
@@ -21,7 +22,7 @@ const cachedFiles = [
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open().then(function(cache) {
+    caches.open(cacheName).then(function(cache) {
       return cache.addAll(cachedFiles);
     })
   );
