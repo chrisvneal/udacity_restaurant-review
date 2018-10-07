@@ -278,7 +278,7 @@ nav h1 a {
 
 .inside #footer {
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width: 50%;
 }
 
@@ -363,16 +363,13 @@ nav h1 a {
   color: #666;
 }
 
-.inside #maincontent {
-  position: relative;
-  top: 130px;
-}
+
 
 
 @media screen and (max-width: 720px) {
   .inside #map-container {
     position: relative;
-    top: 131px;
+    /* top: 131px; */
     height: 400px;
     width: 100%;
   }
@@ -380,12 +377,34 @@ nav h1 a {
   .leaflet-top.leaflet-left {
     z-index: 999;
   }
+
+  .inside #footer {
+    position: fixed;
+  }
+
+  .inside #maincontent {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.inside #restaurant-container, .inside #reviews-container {
+  position: relative;
+  top: 100px;
+}
 }
 
 @media screen and (min-width: 721px) {
   .inside #map-container {
     width: 50%;
     top: 131px;
+  }
+
+  .inside #maincontent {
+    position: relative;
+    top: 130px;
   }
 
   .inside #footer {
