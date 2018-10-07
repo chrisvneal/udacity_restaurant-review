@@ -23,6 +23,9 @@ const cachedFiles = [
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
+
+      // confirm cache open and files added
+      console.log('Files added');
       return cache.addAll(cachedFiles);
     })
   );
