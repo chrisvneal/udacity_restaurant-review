@@ -108,7 +108,6 @@ nav h1 a {
   background-color: #eee;
   font-size: 17px;
   margin: 0;
-  /* width: calc(50% - 80px); */
 }
 
 
@@ -257,8 +256,6 @@ nav h1 a {
 }
 
 
-
-
 /* map styles */
 
 .inside #map-container {
@@ -322,13 +319,12 @@ nav h1 a {
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  /* padding: 140px 40px 30px; */
   padding-left: 20px;
   width: 50%;
 }
 
-/* restaurant reviews styles */
 
+/* restaurant reviews styles */
 
 #reviews-container h2 {
   color: #f58500;
@@ -363,9 +359,6 @@ nav h1 a {
   color: #666;
 }
 
-
-
-
 @media screen and (max-width: 720px) {
   .inside #map-container {
     position: relative;
@@ -373,27 +366,24 @@ nav h1 a {
     height: 400px;
     width: 100%;
   }
-
   .leaflet-top.leaflet-left {
     z-index: 999;
   }
-
   .inside #footer {
     position: fixed;
   }
-
   .inside #maincontent {
-  position: relative;
-  top: 50px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.inside #restaurant-container, .inside #reviews-container {
-  position: relative;
-  top: 100px;
-}
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .inside #restaurant-container,
+  .inside #reviews-container {
+    position: relative;
+    top: 100px;
+  }
 }
 
 @media screen and (min-width: 721px) {
@@ -401,12 +391,10 @@ nav h1 a {
     width: 50%;
     top: 131px;
   }
-
   .inside #maincontent {
     position: relative;
     top: 130px;
   }
-
   .inside #footer {
     position: fixed;
   }
