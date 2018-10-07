@@ -108,7 +108,7 @@ nav h1 a {
   background-color: #eee;
   font-size: 17px;
   margin: 0;
-  width: calc(50% - 80px);
+  /* width: calc(50% - 80px); */
 }
 
 
@@ -364,6 +364,7 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
 
 @media screen and (max-width: 700px) {
   .inside #map-container {
