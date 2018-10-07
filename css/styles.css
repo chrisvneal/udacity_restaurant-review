@@ -256,6 +256,11 @@ nav h1 a {
   z-index: 1000;
 }
 
+
+
+
+/* map styles */
+
 .inside #map-container {
   background: blue none repeat scroll 0 0;
   height: 87%;
@@ -276,6 +281,9 @@ nav h1 a {
   position: absolute;
   width: 50%;
 }
+
+
+/* restaurant info styles */
 
 #restaurant-name {
   color: #f18200;
@@ -317,6 +325,8 @@ nav h1 a {
   padding: 140px 40px 30px;
   width: 50%;
 }
+
+/* restaurant reviews styles */
 
 #reviews-container {
   padding: 30px 40px 80px;
