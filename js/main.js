@@ -1,6 +1,6 @@
 // initialize service worker
 
-if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker) {
 	navigator.serviceWorker.register('./sw.js').then(function() {
 
     // Service worker registration is successful
