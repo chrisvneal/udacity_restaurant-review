@@ -1,3 +1,17 @@
+// initialize service worker
+
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('./sw.js').then(function() {
+
+    // Service worker registration is successful
+		console.log('Service worker is registered');
+	}).catch(function(err) {
+
+    // If registration fails, throw an error
+    console.log('Service worker not registered: ' + err);
+	});
+}
+
 let restaurants,
   neighborhoods,
   cuisines
