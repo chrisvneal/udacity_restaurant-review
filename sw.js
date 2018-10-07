@@ -19,8 +19,10 @@ const cachedFiles = [
   '/img/10.jpg'
 ];
 
-self.addEventListener('install', function(e) {
-
-
-
+self.addEventListener('install', function(event) {
+  event.waitUntil(
+    caches.open().then(function(cache) {
+      return cache.addAll(cachedFiles);
+    })
+  );
 });
