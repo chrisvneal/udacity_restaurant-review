@@ -363,6 +363,11 @@ nav h1 a {
   color: #666;
 }
 
+.inside #maincontent {
+  position: relative;
+  top: 130px;
+}
+
 
 @media screen and (max-width: 720px) {
   .inside #map-container {
@@ -381,5 +386,9 @@ nav h1 a {
   .inside #map-container {
     width: 50%;
     top: 131px;
+  }
+
+  .inside #footer {
+    position: fixed;
   }
 }
