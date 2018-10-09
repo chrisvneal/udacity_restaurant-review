@@ -232,6 +232,10 @@ nav h1 a {
   text-transform: uppercase;
 }
 
+#restaurants-list h2 {
+  height: 60px;
+}
+
 #restaurants-list p {
   margin: 0;
   font-size: 11pt;
@@ -320,18 +324,16 @@ nav h1 a {
   width: 90%;
 }
 
-#restaurant-container {
-  /* border: 2px solid red; */
-  /* width: 100%; */
+.restaurant-info {
+  width: 95%;
+  margin: 0 auto;
 }
 
 #restaurant-container,
 #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  /* padding-left: 20px; */
-  /* width: 50%; */
-  padding: 20px 0 20px 20px;
+  padding: 20px 0;
 }
 
 
@@ -370,10 +372,12 @@ nav h1 a {
   color: #666;
 }
 
+
+
+
 @media screen and (max-width: 720px) {
   .inside #map-container {
     position: relative;
-    /* top: 131px; */
     height: 400px;
     width: 100%;
   }
