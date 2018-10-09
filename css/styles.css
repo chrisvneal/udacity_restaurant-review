@@ -1,7 +1,10 @@
 @charset "utf-8";
 
 /* CSS Document */
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -20,8 +23,6 @@ body {
   margin: 0;
   position: relative;
 }
-
-
 
 ul,
 li {
@@ -372,9 +373,6 @@ nav h1 a {
   color: #666;
 }
 
-
-
-
 @media screen and (max-width: 720px) {
   .inside #map-container {
     position: relative;
@@ -414,8 +412,8 @@ nav h1 a {
   .inside #footer {
     position: fixed;
   }
-
-  #restaurant-container, #reviews-container {
+  #restaurant-container,
+  #reviews-container {
     width: 50%;
   }
 }
