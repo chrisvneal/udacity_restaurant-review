@@ -302,7 +302,7 @@ nav h1 a {
   line-height: 1.1;
 }
 
-#restaurant-img {
+.restaurant-info #restaurant-img {
   width: 90%;
 }
 
