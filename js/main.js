@@ -1,15 +1,15 @@
 // initialize service worker
 
 if (navigator.serviceWorker) {
-	navigator.serviceWorker.register('./sw.js').then(function() {
+  navigator.serviceWorker.register('./sw.js').then(function() {
 
     // Service worker registration is successful
-		console.log('Service worker is registered');
-	}).catch(function(err) {
+    console.log('Service worker is registered');
+  }).catch(function(err) {
 
     // If registration fails, throw an error
     console.log('Service worker not registered: ' + err);
-	});
+  });
 }
 
 let restaurants,
@@ -87,10 +87,10 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
  */
 initMap = () => {
   self.newMap = L.map('map', {
-        center: [40.722216, -73.987501],
-        zoom: 12,
-        scrollWheelZoom: false
-      });
+    center: [40.722216, -73.987501],
+    zoom: 12,
+    scrollWheelZoom: false
+  });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
     mapboxToken: 'pk.eyJ1IjoiY2hyaXN2bmVhbCIsImEiOiJjam14MmJ3cHMwa2ZiM3FveWRxbG80ZjhyIn0.LhAXElEBjYVB8zHSSGlDHg',
     maxZoom: 18,
@@ -163,7 +163,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.alt = `${restaurant.name}'s restaurant`;  
+  image.alt = `${restaurant.name}'s restaurant`;
   li.append(image);
 
   const name = document.createElement('h3');
@@ -194,6 +194,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
     marker.on("click", onClick);
+
     function onClick() {
       window.location.href = marker.options.url;
     }
